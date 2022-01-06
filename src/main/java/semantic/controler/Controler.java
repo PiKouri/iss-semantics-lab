@@ -52,17 +52,19 @@ public class Controler
 	public static void main(String[] args) 
 	{
 		Controler c = new Controler();
+		String tempURI = c.model.getEntityURI("Température").get(0);
+		String humidityURI = c.model.getEntityURI("Hygrométrie").get(0);
+		System.out.println("T:"+tempURI);
+		System.out.println("H:"+humidityURI);
 		try
 		{
 			List<ObservationEntity> obsList = JSONEndpoint.parseObservations("../dataset/tempm.txt");
-			String tempURI = c.model.getEntityURI("Temperature").get(0);
 			c.getCustomControl().instantiateObservations(obsList, tempURI);
-			
+
 			// Same thing, for humidity
 			obsList = JSONEndpoint.parseObservations("../dataset/hum.txt");
-			String humidityURI = c.model.getEntityURI("Humidity").get(0);
 			c.getCustomControl().instantiateObservations(obsList, humidityURI);
-			
+
 			// Exports the model
 			c.exportModel("export.ttl");
 		}

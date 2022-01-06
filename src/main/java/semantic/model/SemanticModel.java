@@ -130,8 +130,15 @@ public class SemanticModel implements IConvenienceInterface
 		this.temperatureSensor1URI = this.getEntityURI("TemperatureSensor_1").get(0);
 		this.temperatureSensor2URI = this.getEntityURI("TemperatureSensor_2").get(0);
 		this.temperatureSensor3URI = this.getEntityURI("TemperatureSensor_3").get(0);
-		this.temperatureURI = this.getEntityURI("Temperature").get(0);
-		this.humidityURI = this.getEntityURI("Humidity").get(0);
+		this.temperatureURI = this.getEntityURI("Température").get(0);
+		this.humiditySensor1URI = this.getEntityURI("HumiditySensor_1").get(0);
+		this.humidityURI = this.getEntityURI("Hygrométrie").get(0);
+		System.out.println(temperatureSensor1URI);
+		System.out.println(temperatureSensor2URI);
+		System.out.println(temperatureSensor3URI);
+		System.out.println(humiditySensor1URI);
+		System.out.println("T:"+temperatureURI);
+		System.out.println("H:"+humidityURI);
 	}
 	
 	public void beginWriteTransaction()
@@ -334,13 +341,12 @@ public class SemanticModel implements IConvenienceInterface
 				return this.temperatureSensor3URI;
 			}
 		}
-		else if(paramURI.equals(this.humidityURI))
-		{
-			return this.humiditySensor1URI;
-		}
-		else
-		{
-			return null;
+		else {
+			if (paramURI.equals(this.humidityURI)) {
+				return this.humiditySensor1URI;
+			} else {
+				return null;
+			}
 		}
 	}
 	

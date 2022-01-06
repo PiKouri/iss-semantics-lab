@@ -24,12 +24,13 @@ public class DoItYourselfControl implements IControlFunctions
 			String paramURI) {
 		// Map to avoid trying to create multiple instant instance for a same timestamp
 		// (timestamp, associated instant's URI)
-		Map<String, String> mapTimestampURI = new HashMap<String, String>(); 
+		Map<String, String> mapTimestampURI = new HashMap<String, String>();
+//		int i =0;
 		for (ObservationEntity obs : obsList) {
-
+//			System.out.println("Instantiating observation "+i++);
 			String timestamp = obs.getTimestamp().getTimeStamp();
 
-			String instantURI = null;
+			String instantURI;
 
 			if (mapTimestampURI.containsKey(timestamp))
 				instantURI = mapTimestampURI.get(timestamp);
