@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/5iss/tp2#"
+     xml:base="http://www.semanticweb.org/5iss/tp2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/5iss/tp2">
+        <owl:imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
+        <owl:imports rdf:resource="http://homepages.laas.fr/nseydoux/ontologies/tp-iss"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLDataProperty_7c0f8588_780a_4d6e_abe1_6b493059b9fe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/5iss/tp2#OWLDataProperty_7c0f8588_780a_4d6e_abe1_6b493059b9fe">
+        <rdfs:label xml:lang="en">a pour minimum</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLDataProperty_83a4c21e_0890_4f57_a7ec_ce2be3515a46 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/5iss/tp2#OWLDataProperty_83a4c21e_0890_4f57_a7ec_ce2be3515a46">
+        <rdfs:label xml:lang="en">a pour maximum</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Property -->
+
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Property">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#OWLClass_5978d744_0b81_42e3_be10_3d1eebb096ce"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#OWLClass_5978d744_0b81_42e3_be10_3d1eebb096ce -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#OWLClass_5978d744_0b81_42e3_be10_3d1eebb096ce"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_0021ac01_ffff_4c2f_825b_f785ca896c45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_0021ac01_ffff_4c2f_825b_f785ca896c45">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <ssn:hasOperatingRange rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_ea074e3d_0263_4210_8567_730d34fe4991"/>
+        <rdfs:label xml:lang="en">TemperatureSensor_3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_03047893_45b5_4b9f_90cb_01eaab27d536 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_03047893_45b5_4b9f_90cb_01eaab27d536">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <ssn:hasOperatingRange rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_76f08a90_4bfe_4c0b_89f8_4a729587a8aa"/>
+        <rdfs:label xml:lang="en">TemperatureSensor_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_148731a7_7d98_4896_8aa5_41423bb1345f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_148731a7_7d98_4896_8aa5_41423bb1345f">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <ssn:isProducedBy rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_0021ac01_ffff_4c2f_825b_f785ca896c45"/>
+        <rdfs:label xml:lang="en">Output  T2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_68f0ea2c_e5c8_4940_bfc6_14d61d262d86 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_68f0ea2c_e5c8_4940_bfc6_14d61d262d86">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <ssn:isProducedBy rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_f9d9c0b6_f1b8_419f_bb8f_01ea9e5d783e"/>
+        <rdfs:label xml:lang="en">Output T3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_76f08a90_4bfe_4c0b_89f8_4a729587a8aa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_76f08a90_4bfe_4c0b_89f8_4a729587a8aa">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#OperatingRange"/>
+        <ssn:inCondition rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_818bcc98_efa7_4501_b5db_ff9122f2e082"/>
+        <rdfs:label xml:lang="en">Range B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_818bcc98_efa7_4501_b5db_ff9122f2e082 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_818bcc98_efa7_4501_b5db_ff9122f2e082">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Condition"/>
+        <ssn:forProperty rdf:resource="http://www.semanticweb.org/seydoux/ontologies/2015/11/untitled-ontology-29#OWLNamedIndividual_2b887a87_5d83_4d70_b7c9_6f8b1c3e54f0"/>
+        <OWLDataProperty_7c0f8588_780a_4d6e_abe1_6b493059b9fe rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</OWLDataProperty_7c0f8588_780a_4d6e_abe1_6b493059b9fe>
+        <OWLDataProperty_83a4c21e_0890_4f57_a7ec_ce2be3515a46 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</OWLDataProperty_83a4c21e_0890_4f57_a7ec_ce2be3515a46>
+        <rdfs:comment>Positive temperature range relatively common on earth. Expressed in °C</rdfs:comment>
+        <rdfs:label xml:lang="en">Positive earthly temperatures</rdfs:label>
+        <rdfs:label>Températures positives</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_c4043e50_f8ce_4170_9d5a_794943e46bd9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_c4043e50_f8ce_4170_9d5a_794943e46bd9">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Condition"/>
+        <ssn:forProperty rdf:resource="http://www.semanticweb.org/seydoux/ontologies/2015/11/untitled-ontology-29#OWLNamedIndividual_2b887a87_5d83_4d70_b7c9_6f8b1c3e54f0"/>
+        <OWLDataProperty_7c0f8588_780a_4d6e_abe1_6b493059b9fe rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-30.0</OWLDataProperty_7c0f8588_780a_4d6e_abe1_6b493059b9fe>
+        <OWLDataProperty_83a4c21e_0890_4f57_a7ec_ce2be3515a46 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</OWLDataProperty_83a4c21e_0890_4f57_a7ec_ce2be3515a46>
+        <rdfs:comment>Temperatures commonly measured on earth, both positive and negative, expressed in °C.</rdfs:comment>
+        <rdfs:label xml:lang="en">Common temperatures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_ea074e3d_0263_4210_8567_730d34fe4991 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_ea074e3d_0263_4210_8567_730d34fe4991">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#OperatingRange"/>
+        <ssn:inCondition rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_c4043e50_f8ce_4170_9d5a_794943e46bd9"/>
+        <rdfs:label xml:lang="en">Range A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_f9d9c0b6_f1b8_419f_bb8f_01ea9e5d783e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_f9d9c0b6_f1b8_419f_bb8f_01ea9e5d783e">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <ssn:hasOperatingRange rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_76f08a90_4bfe_4c0b_89f8_4a729587a8aa"/>
+        <rdfs:label xml:lang="en">TemperatureSensor_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_fc080a98_fa88_4825_b227_641894457026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_fc080a98_fa88_4825_b227_641894457026">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <ssn:isProducedBy rdf:resource="http://www.semanticweb.org/5iss/tp2#OWLNamedIndividual_03047893_45b5_4b9f_90cb_01eaab27d536"/>
+        <rdfs:label xml:lang="en">Output T1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/seydoux/ontologies/2015/11/untitled-ontology-29#OWLNamedIndividual_2b887a87_5d83_4d70_b7c9_6f8b1c3e54f0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seydoux/ontologies/2015/11/untitled-ontology-29#OWLNamedIndividual_2b887a87_5d83_4d70_b7c9_6f8b1c3e54f0">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#OWLClass_5978d744_0b81_42e3_be10_3d1eebb096ce"/>
+        <rdfs:label>Température</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
